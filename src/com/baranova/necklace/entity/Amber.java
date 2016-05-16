@@ -1,4 +1,4 @@
-package src.com.baranova.necklace.entity;
+package com.baranova.necklace.entity;
 
 
 public class Amber extends Stone{

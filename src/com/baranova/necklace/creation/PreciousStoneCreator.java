@@ -1,9 +1,9 @@
-package src.com.baranova.necklace.creation;
+package com.baranova.necklace.creation;
 
 
-import src.com.baranova.necklace.entity.Amber;
-import src.com.baranova.necklace.entity.Pearl;
-import src.com.baranova.necklace.entity.Stone;
+import com.baranova.necklace.entity.Amber;
+import com.baranova.necklace.entity.Pearl;
+import com.baranova.necklace.entity.Stone;
 
 public class PreciousStoneCreator implements StoneCreator{
 

@@ -1,8 +1,8 @@
-package src.com.baranova.necklace.action;
+package com.baranova.necklace.action;
 
 
-import src.com.baranova.necklace.entity.Necklace;
-import src.com.baranova.necklace.entity.Stone;
+import com.baranova.necklace.entity.Necklace;
+import com.baranova.necklace.entity.Stone;
 
 import java.util.*;
 
@@ -52,8 +52,8 @@ public class ActionNecklace {
     }
 
     public static Set<Stone> sortingNecklace(Set<Stone> necklaceStone){
-        List<Stone> sortednecklace=new ArrayList<Stone>(necklaceStone);
-        Comparator<Stone> comparator=new Comparator<Stone>() {
+        List<Stone> sortednecklace=new ArrayList<>(necklaceStone);
+        Comparator<Stone> comparator=new Comparator<>() {
             @Override
             public int compare(Stone one, Stone two) {
                 return Integer.compare(one.getCost(),two.getCost());
@@ -63,7 +63,7 @@ public class ActionNecklace {
         for(Stone stone:sortednecklace){
             System.out.println(stone);
         }
-        Set <Stone> sorted=new HashSet<Stone>(sortednecklace);
-        return sorted;
+        Set <Stone> sortedSet=new HashSet<>(sortednecklace);
+        return sortedSet;
     }
 }

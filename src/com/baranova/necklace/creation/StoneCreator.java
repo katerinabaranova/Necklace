@@ -1,6 +1,6 @@
-package src.com.baranova.necklace.creation;
+package com.baranova.necklace.creation;
 
-import src.com.baranova.necklace.entity.Stone;
+import com.baranova.necklace.entity.Stone;
 
 public interface StoneCreator {
 

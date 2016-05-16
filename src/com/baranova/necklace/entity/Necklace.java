@@ -1,4 +1,4 @@
-package src.com.baranova.necklace.entity;
+package com.baranova.necklace.entity;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -27,7 +27,7 @@ public class Necklace {
     }
 
     public Set<Stone> getComposition() {
-        Set <Stone> cloneComposition=new HashSet<Stone>();
+        Set <Stone> cloneComposition=new HashSet<>();
         cloneComposition.addAll(composition);
         return cloneComposition;
 
