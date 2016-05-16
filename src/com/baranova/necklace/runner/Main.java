@@ -16,11 +16,11 @@ import java.util.Set;
 
 public class Main {
     static final Logger LOG= LogManager.getLogger("Main");
-    static final String stoneFile=System.getProperty("user.dir")+"/resource/stones.txt";
+    public static final String stoneFile=System.getProperty("user.dir")+"/resource/stones.txt";
+    public static final String necklaceFile=System.getProperty("user.dir")+"/resource/necklace.txt";
 
     public static void main(String[] args) {
 
-        LOG.info("hvjv");
         ArrayList<String> stonesString= StoneReader.readStonesFile(stoneFile);
         Set<Stone> necklaceComposition= StoneParser.parsingLine(stonesString);
 

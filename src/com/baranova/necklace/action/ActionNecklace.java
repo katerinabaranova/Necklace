@@ -53,7 +53,7 @@ public class ActionNecklace {
 
     public static Set<Stone> sortingNecklace(Set<Stone> necklaceStone){
         List<Stone> sortednecklace=new ArrayList<>(necklaceStone);
-        Comparator<Stone> comparator=new Comparator<>() {
+        Comparator<Stone> comparator=new Comparator<Stone>() {
             @Override
             public int compare(Stone one, Stone two) {
                 return Integer.compare(one.getCost(),two.getCost());

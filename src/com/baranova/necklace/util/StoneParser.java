@@ -19,7 +19,7 @@ public class StoneParser {
             stonePar = stone.split(" ");
             StoneCreator stoneCreator = new PreciousStoneCreator();
             Stone newStone = stoneCreator.getStone(stonePar);
-            stonesObjects.add(newStone);
+            if (newStone!=null) {stonesObjects.add(newStone);}
         }
 
         return stonesObjects;
