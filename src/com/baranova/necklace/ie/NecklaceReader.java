@@ -1,4 +1,4 @@
-package com.baranova.necklace.io;
+package com.baranova.necklace.ie;
 
 
 import org.apache.logging.log4j.LogManager;

@@ -27,7 +27,7 @@ public class Pearl extends Stone {
                 "name='" + super.getName() + '\'' +
                 ", cost=" + super.getCost() +
                 ", weight=" + super.getWeight() +
-                ", transperancy=" + super.getTransparency() +
+                ", transparency=" + super.getTransparency() +
                 ",diameter=" + diameter +
                 '}';
     }

@@ -23,7 +23,6 @@ public class ActionNecklace {
         for(Stone stone:stoneSet){
             weight=weight+stone.getWeight();
         }
-        System.out.println("Вес в каратах: "+weight);
         return weight;
     }
 
@@ -34,24 +33,22 @@ public class ActionNecklace {
         for(Stone stone:stoneSet){
             cost=cost+stone.getCost();
         }
-        System.out.println("Общая стоимость: "+cost);
         return cost;
     }
 
-    public static void checkingTransperancy(Necklace necklace,double startTransp, double endTransp){
+    public static Set<Stone> checkingTransperancy(Necklace necklace,double startTransp, double endTransp){
 
-        Set<Stone> stoneSet=necklace.getComposition();
-        int cost=0;
-        for(Stone stone:stoneSet){
+        Set<Stone> stoneSet=new HashSet<>();
+        for(Stone stone:necklace.getComposition()){
             double transp=stone.getTransparency();
             if ((transp>=startTransp)&&(transp<=endTransp)){
-                System.out.println(stone);
+            stoneSet.add(stone);
             }
-
         }
+        return stoneSet;
     }
 
-    public static Set<Stone> sortingNecklace(Set<Stone> necklaceStone){
+    public static List<Stone> sortingNecklace(Set<Stone> necklaceStone){
         List<Stone> sortednecklace=new ArrayList<>(necklaceStone);
         Comparator<Stone> comparator=new Comparator<Stone>() {
             @Override
@@ -60,10 +57,6 @@ public class ActionNecklace {
             }
         };
         Collections.sort(sortednecklace,comparator);
-        for(Stone stone:sortednecklace){
-            System.out.println(stone);
-        }
-        Set <Stone> sortedSet=new HashSet<>(sortednecklace);
-        return sortedSet;
+        return sortednecklace;
     }
 }
