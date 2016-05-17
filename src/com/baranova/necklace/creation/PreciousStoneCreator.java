@@ -10,13 +10,15 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class PreciousStoneCreator implements StoneCreator{
+
     static final Logger LOG= LogManager.getLogger("Main");
+
     @Override
     public Stone getStone (String[] param){
         try {
             boolean valid = StoneValidation.validateStone(param);
             if (!valid) {
-                throw new NotValidStoneException("Wrong stone information in file");
+                throw new NotValidStoneException();
             }
             switch (param[0].toLowerCase()) {
                 case "pearl":
@@ -48,6 +50,7 @@ public class PreciousStoneCreator implements StoneCreator{
             }
         }catch (NotValidStoneException e){
             LOG.error("Wrong stone information in file");
+
         }
         return null;
     }

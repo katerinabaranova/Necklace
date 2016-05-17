@@ -21,6 +21,8 @@ public class Main {
     public static final String stoneFile=System.getProperty("user.dir")+"/resource/stones.txt";
     public static final String necklaceFile=System.getProperty("user.dir")+"/resource/necklace.txt";
     public static final String reportFile=System.getProperty("user.dir")+"/result/report.txt";
+    public static final String intervalFile=System.getProperty("user.dir")+"/resource/interval.txt";
+
 
     public static void main(String[] args) {
 
@@ -28,7 +30,6 @@ public class Main {
         Set<Stone> necklaceComposition= StoneParser.parsingLine(stonesString);
         String necklaceName= NecklaceReader.readNecklaceFile(necklaceFile);
         Necklace newNecklace= NecklaceCreator.getNecklace(necklaceName,necklaceComposition);
-
         ReportWriter.reportNecklace(reportFile,newNecklace);
     }
 }

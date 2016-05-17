@@ -16,7 +16,7 @@ public class ActionNecklace {
         return necklaceStone;
     }
 
-    public static double commonWeigth(Necklace necklace){
+    public static double commonWeight(Necklace necklace){
 
         Set<Stone> stoneSet=necklace.getComposition();
         double weight=0;
@@ -36,7 +36,7 @@ public class ActionNecklace {
         return cost;
     }
 
-    public static Set<Stone> checkingTransperancy(Necklace necklace,double startTransp, double endTransp){
+    public static Set<Stone> checkingTransparency(Necklace necklace, double startTransp, double endTransp){
 
         Set<Stone> stoneSet=new HashSet<>();
         for(Stone stone:necklace.getComposition()){

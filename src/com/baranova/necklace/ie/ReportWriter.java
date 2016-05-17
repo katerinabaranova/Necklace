@@ -5,6 +5,8 @@ package com.baranova.necklace.ie;
 import com.baranova.necklace.action.ActionNecklace;
 import com.baranova.necklace.entity.Necklace;
 import com.baranova.necklace.entity.Stone;
+import com.baranova.necklace.runner.Main;
+import com.baranova.necklace.util.IntervalParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,15 +24,20 @@ public class ReportWriter {
         try{
             printWriter=new PrintWriter(new FileWriter(f));
             printWriter.println(necklace);
+            printWriter.println();
             printWriter.println("Sorted stones:");
             List<Stone> sortedNecklace=ActionNecklace.sortingNecklace(necklace.getComposition());
             for(Stone stone:sortedNecklace){
                 printWriter.println(stone);
             }
-            printWriter.println("Stones with transparency between 0.3 and 0.7");
-            double startTransp=0.3;
-            double endTransp=0.7;
-            Set<Stone> transpStone=ActionNecklace.checkingTransperancy(necklace,startTransp,endTransp);
+            printWriter.println();
+
+            String interval=IntervalReader.readIntervalFile(Main.intervalFile);
+            double[] intervalArray= IntervalParser.parsingIntervalLine(interval);
+            double startTransp=intervalArray[0];
+            double endTransp=intervalArray[1];
+            printWriter.println("Stones with transparency between "+startTransp+" and "+endTransp);
+            Set<Stone> transpStone=ActionNecklace.checkingTransparency(necklace,startTransp,endTransp);
             for(Stone stone:transpStone){
                 printWriter.println(stone);
             }

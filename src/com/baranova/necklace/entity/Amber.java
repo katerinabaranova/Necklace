@@ -23,11 +23,11 @@ public class Amber extends Stone{
 
     @Override
     public String toString() {
-        return "Pearl{" +
+        return "Amber{" +
                 "name='" + super.getName() + '\'' +
                 ", cost=" + super.getCost() +
                 ", weight=" + super.getWeight() +
-                ", transperancy=" + super.getTransparency() +
+                ", transparency=" + super.getTransparency() +
                 ",numberHardness=" + numberHardness +
                 '}';
     }

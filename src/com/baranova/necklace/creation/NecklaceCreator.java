@@ -10,7 +10,7 @@ public class NecklaceCreator {
 
     public static Necklace getNecklace(String necklaceName, Set<Stone> necklaceComposition){
         Necklace necklace=new Necklace(necklaceName,necklaceComposition);
-        double weight= ActionNecklace.commonWeigth(necklace);
+        double weight= ActionNecklace.commonWeight(necklace);
         int cost= ActionNecklace.commonCost(necklace);
         necklace.setWeightCarats(weight);
         necklace.setCost(cost);
