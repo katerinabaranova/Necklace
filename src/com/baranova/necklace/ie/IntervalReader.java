@@ -1,6 +1,7 @@
 package com.baranova.necklace.ie;
 
 
+import com.baranova.necklace.exception.IntervalException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -15,18 +16,26 @@ public class IntervalReader {
 
         public static String readIntervalFile(String filename) {
 
-            String interval="";
-            File f=new File(filename);
-            BufferedReader bufferedReader=null;
-            try{
-                bufferedReader=new BufferedReader(new FileReader(f));
+            String interval = "";
+            File f = new File(filename);
+            BufferedReader bufferedReader = null;
+            int linesKol = 0;
+            try {
+                bufferedReader = new BufferedReader(new FileReader(f));
                 String line;
-                while ((line=bufferedReader.readLine())!=null) {
-                    interval=line;
+                while ((line = bufferedReader.readLine()) != null) {
+                    interval = line;
+                    linesKol++;
+
                 }
-            } catch (IOException e){
+                if (linesKol > 1) {
+                    throw new IntervalException();
+                }
+            } catch (IOException e) {
                 LOG.error("Error while reading file:" + filename);
-            } finally {
+            } catch (IntervalException e){
+                LOG.error("Error: too much information in interval file:"+filename);
+            }finally {
                 try {
                     if (bufferedReader != null) {
                         bufferedReader.close();

@@ -21,7 +21,6 @@ public class StoneParser {
             Stone newStone = stoneCreator.getStone(stonePar);
             if (newStone!=null) {stonesObjects.add(newStone);}
         }
-
         return stonesObjects;
     }
 }

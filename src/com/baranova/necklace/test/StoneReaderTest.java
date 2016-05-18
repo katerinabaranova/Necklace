@@ -1,4 +1,6 @@
-package src.com.baranova.necklace.test;
+package com.baranova.necklace.test;
+
+import com.baranova.necklace.runner.Main;
 
 import java.io.File;
 
@@ -9,7 +11,7 @@ public class StoneReaderTest {
 
     @org.junit.Test
     public void testReadFile(){
-        String src=System.getProperty("user.dir")+"/src/by/bsu/OOP_Necklace_Baranova/txt/stones.txt";
+        String src= Main.stoneFile;
         File file=new File(src);
         assertTrue(file.exists());
     }

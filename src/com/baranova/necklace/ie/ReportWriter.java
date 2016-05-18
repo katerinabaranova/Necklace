@@ -34,12 +34,16 @@ public class ReportWriter {
 
             String interval=IntervalReader.readIntervalFile(Main.intervalFile);
             double[] intervalArray= IntervalParser.parsingIntervalLine(interval);
-            double startTransp=intervalArray[0];
-            double endTransp=intervalArray[1];
-            printWriter.println("Stones with transparency between "+startTransp+" and "+endTransp);
-            Set<Stone> transpStone=ActionNecklace.checkingTransparency(necklace,startTransp,endTransp);
-            for(Stone stone:transpStone){
-                printWriter.println(stone);
+            if (intervalArray!=null) {
+                double startTransp = intervalArray[0];
+                double endTransp = intervalArray[1];
+                printWriter.println("Stones with transparency between " + startTransp + " and " + endTransp);
+                Set<Stone> transpStone = ActionNecklace.checkingTransparency(necklace, startTransp, endTransp);
+                for (Stone stone : transpStone) {
+                    printWriter.println(stone);
+                }
+            } else{
+                printWriter.println("Impossible to write transparency report, wrong information in file");
             }
         }catch (IOException e){
             LOG.error("Error while writing file:" + filename);

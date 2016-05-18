@@ -20,6 +20,7 @@ public class IntervalParser {
 
         } catch (Exception e){
             LOG.error("Wrong interval information in file");
+            return null;
         }
         return intervalArray;
     }

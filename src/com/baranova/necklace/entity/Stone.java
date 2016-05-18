@@ -64,9 +64,7 @@ public class Stone {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         Stone stone = (Stone) o;
-
         if (cost != stone.cost) return false;
         if (Double.compare(stone.weight, weight) != 0) return false;
         if (Double.compare(stone.transparency, transparency) != 0) return false;
