@@ -10,6 +10,9 @@ public class Necklace {
     private double weightCarats;
     private Set <Stone>  composition;
 
+    public Necklace() {
+
+    }
     public Necklace(String name, Set<Stone> composition) {
         this.name = name;
         this.composition = composition;
@@ -21,11 +24,9 @@ public class Necklace {
     public int getCost() {
         return cost;
     }
-
     public double getWeightCarats() {
         return weightCarats;
     }
-
     public Set<Stone> getComposition() {
         Set <Stone> cloneComposition=new HashSet<>();
         cloneComposition.addAll(composition);

@@ -11,11 +11,11 @@ public class Stone {
     public Stone(){
     }
 
-    public Stone(String name, int cost, double weight, double transperancy) {
+    public Stone(String name, int cost, double weight, double transparency) {
         this.name = name;
         this.cost = cost;
         this.weight = weight;
-        this.transparency =transperancy;
+        this.transparency =transparency;
     }
 
     public String getName() {

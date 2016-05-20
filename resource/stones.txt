@@ -1,5 +1,5 @@
-Stone Diamond 1 0.3 1.0
+Stone Diamond 33 0.3 1.0
 Stone Emerald 20 1.0 0.5
-Pearl BluePearl 12 0.4 0.0 7.5
+Pearl BluePearl 12 0.ghy 0.0 7.5
 Stone Ruby 15 0.8 0.6
-Amber Amber1 14 0.7 0.6 2.1
+Amber Amber1 14 0.7 0.6 2.1 45

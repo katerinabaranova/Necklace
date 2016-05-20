@@ -3,3 +3,57 @@
 [ERROR] 2016-05-18 00:58:07.350 [main] Main - Wrong stone information in file
 [ERROR] 2016-05-18 01:01:26.663 [main] Main - Wrong interval information in file
 [ERROR] 2016-05-18 16:42:33.172 [main] Main - Wrong interval information in file
+[ERROR] 2016-05-19 23:36:56.571 [main] Main - Empty stone file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stones.txt
+[ERROR] 2016-05-19 23:50:24.135 [main] Main - Empty stone file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stones.txt
+[ERROR] 2016-05-19 23:57:20.367 [main] Main - Empty stone file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stones.txt
+[ERROR] 2016-05-19 23:59:59.800 [main] Main - Empty stone file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stones.txt
+[ERROR] 2016-05-20 00:23:14.220 [main] Main - Empty stone file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stones.txt
+[ERROR] 2016-05-20 00:23:43.177 [main] Main - Empty stone file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stones.txt
+[ERROR] 2016-05-20 00:25:23.546 [main] Main - Empty stone file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stones.txt
+[ERROR] 2016-05-20 00:36:51.166 [main] Main - Error while reading file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stone.txt
+[ERROR] 2016-05-20 00:38:28.233 [main] Main - Error while reading file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stone.txt
+[ERROR] 2016-05-20 10:38:47.630 [main] Main - Error while reading file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stone.txt
+[ERROR] 2016-05-20 10:39:10.399 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 10:40:26.596 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 10:40:26.620 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 10:41:08.235 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 10:41:08.299 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 13:25:43.503 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 13:25:43.537 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 13:25:43.537 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:38:01.343 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:38:01.435 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:38:01.435 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:38:01.686 [main] Main - Empty interval file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/interval.txt
+[ERROR] 2016-05-20 15:45:21.596 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:45:21.652 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:45:21.652 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:45:21.910 [main] Main - Empty interval file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/interval.txt
+[ERROR] 2016-05-20 15:48:30.455 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:48:30.465 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:48:30.465 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:48:30.538 [main] Main - Wrong interval information in file
+[ERROR] 2016-05-20 15:49:21.478 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:49:21.502 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:49:21.502 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:49:21.561 [main] Main - Error: too much information in interval file:/Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/interval.txt
+[ERROR] 2016-05-20 15:51:21.677 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:51:21.710 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:51:21.710 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:51:21.974 [main] Main - Error: too much information in interval file:/Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/interval.txt
+[ERROR] 2016-05-20 15:53:42.420 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:53:42.434 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:53:42.434 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:53:42.532 [main] Main - Error: too much information in interval file:/Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/interval.txt
+[ERROR] 2016-05-20 15:56:37.735 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:56:37.753 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:56:37.753 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 15:56:37.887 [main] Main - Error: too much information in interval file:/Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/interval.txt
+[ERROR] 2016-05-20 16:18:21.802 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 16:18:21.838 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 16:18:43.346 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 16:18:43.373 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 16:18:43.421 [main] Main - Empty necklace file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/necklace.txt
+[ERROR] 2016-05-20 16:19:06.905 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 16:19:06.941 [main] Main - Wrong stone information in file
+[ERROR] 2016-05-20 16:19:06.989 [main] Main - Error: too much information in necklace file:/Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/necklace.txt

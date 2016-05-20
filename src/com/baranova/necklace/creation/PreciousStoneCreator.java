@@ -46,7 +46,8 @@ public class PreciousStoneCreator implements StoneCreator{
                     stone.setWeight(Double.parseDouble(param[3]));
                     stone.setTransparency(Double.parseDouble(param[4]));
                     return stone;
-
+                default:
+                    throw new NotValidStoneException();
             }
         }catch (NotValidStoneException e){
             LOG.error("Wrong stone information in file");

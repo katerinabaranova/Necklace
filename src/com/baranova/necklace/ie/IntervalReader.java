@@ -1,7 +1,8 @@
 package com.baranova.necklace.ie;
 
 
-import com.baranova.necklace.exception.IntervalException;
+import com.baranova.necklace.exception.EmptyFileException;
+import com.baranova.necklace.exception.WrongIntervalException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -29,13 +30,19 @@ public class IntervalReader {
 
                 }
                 if (linesKol > 1) {
-                    throw new IntervalException();
+                    throw new WrongIntervalException();
+                }
+                if (linesKol==0){
+                    throw new EmptyFileException();
                 }
             } catch (IOException e) {
                 LOG.error("Error while reading file:" + filename);
-            } catch (IntervalException e){
+            } catch (WrongIntervalException e){
                 LOG.error("Error: too much information in interval file:"+filename);
-            }finally {
+                return new String("");
+            }catch (EmptyFileException e){
+                LOG.error("Empty interval file: "+filename);
+            } finally {
                 try {
                     if (bufferedReader != null) {
                         bufferedReader.close();

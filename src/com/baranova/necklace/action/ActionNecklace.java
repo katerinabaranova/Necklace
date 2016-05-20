@@ -8,14 +8,6 @@ import java.util.*;
 
 public class ActionNecklace {
 
-    public static Set<Stone> addStone(String nameStone, ArrayList<Stone> stonesFile, Set<Stone> necklaceStone){
-
-        for (Stone stone:stonesFile){
-            if(stone.getName().equalsIgnoreCase(nameStone)){necklaceStone.add(stone);}
-        }
-        return necklaceStone;
-    }
-
     public static double commonWeight(Necklace necklace){
 
         Set<Stone> stoneSet=necklace.getComposition();

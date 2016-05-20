@@ -22,6 +22,10 @@ public class StoneValidation {
             if ((cost<0)||(weight<0)||(transparency<0)||(transparency>1)||(extra<0)){
                 valid=false;
             }
+            if (("stone".equalsIgnoreCase(param[0])&&param.length!=5)||("amber".equalsIgnoreCase(param[0])&&param.length!=6)||
+                    ("pearl".equalsIgnoreCase(param[0])&&param.length!=6)){
+                valid=false;
+            }
         } catch (Exception e){
             valid=false;
         }
