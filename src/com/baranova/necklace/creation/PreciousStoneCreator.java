@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 
 public class PreciousStoneCreator implements StoneCreator{
 
-    static final Logger LOG= LogManager.getLogger("Main");
+    static final Logger LOG= LogManager.getLogger();
 
     @Override
     public Stone getStone (String[] param){

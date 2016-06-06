@@ -57,3 +57,26 @@
 [ERROR] 2016-05-20 16:19:06.905 [main] Main - Wrong stone information in file
 [ERROR] 2016-05-20 16:19:06.941 [main] Main - Wrong stone information in file
 [ERROR] 2016-05-20 16:19:06.989 [main] Main - Error: too much information in necklace file:/Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/necklace.txt
+[ERROR] 2016-06-06 23:50:53.579 [main] Main - Error while reading file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stone.txt
+[ERROR] 2016-06-06 23:52:45.334 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-06 23:52:45.358 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-06 23:56:03.717 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-06 23:56:03.755 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-06 23:56:32.608 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-06 23:56:32.645 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-06 23:58:55.757 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-06 23:58:55.806 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-07 00:03:16.447 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-07 00:03:16.494 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-07 00:33:28.095 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-07 00:33:28.127 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-07 00:35:36.834 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-07 00:35:36.856 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-07 00:36:08.338 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-07 00:36:08.340 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-07 00:39:08.790 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-07 00:39:08.812 [main] Main - Wrong stone information in file
+[ERROR] 2016-06-07 01:11:25.880 [main] main - Wrong information in interval file
+[ERROR] 2016-06-07 01:20:48.814 [main] PreciousStoneCreator - Wrong stone information in file
+[ERROR] 2016-06-07 01:20:48.860 [main] PreciousStoneCreator - Wrong stone information in file
+[ERROR] 2016-06-07 01:20:49.091 [main] ReportWriter - Wrong information in interval file

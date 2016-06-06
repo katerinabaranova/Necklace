@@ -31,11 +31,8 @@ public class Main {
             Necklace newNecklace = NecklaceCreator.getNecklace(necklaceName, necklaceComposition);
             ReportWriter.reportNecklace(FileConstant.REPORT_FILE, newNecklace);
         } catch (IOException e){
-            //TODO message from constant send to method?
             ReportWriter.reportEmptyNecklace(FileConstant.REPORT_FILE,MessageConstant.READ_ERROR);
         } catch (EmptyFileException e){
-            //TODO is it possible to do like this?
-           // ReportWriter.reportNecklace(FileConstant.REPORT_FILE,null);
             ReportWriter.reportEmptyNecklace(FileConstant.REPORT_FILE, MessageConstant.EMPTY_FILE);
         } catch (WrongNecklaceException e){
             ReportWriter.reportEmptyNecklace(FileConstant.REPORT_FILE,MessageConstant.WRONG_INFORMATION);

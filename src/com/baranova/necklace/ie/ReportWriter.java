@@ -6,6 +6,7 @@ import com.baranova.necklace.action.ActionNecklace;
 import com.baranova.necklace.constant.FileConstant;
 import com.baranova.necklace.entity.Necklace;
 import com.baranova.necklace.entity.Stone;
+import com.baranova.necklace.exception.WrongIntervalException;
 import com.baranova.necklace.util.IntervalParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,7 +16,7 @@ import java.util.List;
 import java.util.Set;
 
 public class ReportWriter {
-    static final Logger LOG= LogManager.getLogger("Main");
+    static final Logger LOG= LogManager.getLogger();
 
     public static void reportNecklace(String filename, Necklace necklace) {
 
@@ -32,8 +33,8 @@ public class ReportWriter {
             }
             printWriter.println();
             String interval = IntervalReader.readIntervalFile(FileConstant.INTERVAL_FILE);
-            double[] intervalArray = IntervalParser.parsingIntervalLine(interval);
-            if (intervalArray != null) {
+            try {
+                double[] intervalArray = IntervalParser.parsingIntervalLine(interval);
                 double startTransp = intervalArray[0];
                 double endTransp = intervalArray[1];
                 printWriter.println("Stones with transparency between " + startTransp + " and " + endTransp);
@@ -41,10 +42,10 @@ public class ReportWriter {
                 for (Stone stone : transpStone) {
                     printWriter.println(stone);
                 }
-            } else {
+            } catch (WrongIntervalException e) {
                 printWriter.println("Impossible to write transparency report: there is no/wrong information in file");
+                LOG.error("Wrong information in interval file");
             }
-
         }catch (IOException e){
             LOG.error("Error while writing file:" + filename);
         }finally{

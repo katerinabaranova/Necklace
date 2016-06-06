@@ -1,12 +1,10 @@
 package com.baranova.necklace.util;
 
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
 public class StoneValidation {
-    static final Logger LOG= LogManager.getLogger("Main");
+    static final Logger LOG= LogManager.getLogger("StoneValidation");
 
     public static boolean validateStone(String[] param){
         boolean valid=true;

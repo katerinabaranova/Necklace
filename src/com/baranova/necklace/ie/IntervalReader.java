@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class IntervalReader {
 
-        static final Logger LOG= LogManager.getLogger("Main");
+        static final Logger LOG= LogManager.getLogger("IntervalReader");
 
         public static String readIntervalFile(String filename) {
 
@@ -39,7 +39,6 @@ public class IntervalReader {
                 LOG.error("Error while reading file:" + filename);
             } catch (WrongIntervalException e){
                 LOG.error("Error: too much information in interval file:"+filename);
-                return new String("");
             }catch (EmptyFileException e){
                 LOG.error("Empty interval file: "+filename);
             } finally {
