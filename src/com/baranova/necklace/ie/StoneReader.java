@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class StoneReader {
 
-    static final Logger LOG= LogManager.getLogger("StoneReader");
+    static final Logger LOG= LogManager.getLogger();
 
     public static ArrayList<String> readStonesFile(String filename) throws IOException,EmptyFileException {
 

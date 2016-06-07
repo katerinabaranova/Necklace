@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class IntervalReader {
 
-        static final Logger LOG= LogManager.getLogger("IntervalReader");
+        static final Logger LOG= LogManager.getLogger();
 
         public static String readIntervalFile(String filename) {
 

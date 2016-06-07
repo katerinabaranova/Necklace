@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class NecklaceReader {
 
-        static final Logger LOG= LogManager.getLogger("Main");
+        static final Logger LOG= LogManager.getLogger();
 
         public static String readNecklaceFile(String filename) throws IOException,EmptyFileException,WrongNecklaceException {
 

@@ -5,7 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class IntervalValidation {
-    static final Logger LOG= LogManager.getLogger("IntervalValidation");
+    static final Logger LOG= LogManager.getLogger();
 
     public static boolean validateInterval(String interval)  {
         boolean valid=true;
