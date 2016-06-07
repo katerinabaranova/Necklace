@@ -13,14 +13,14 @@ public class IntervalValidation {
         String [] intervalString=interval.split(" ");
         double [] intervalArray=new double[2];
         if (intervalString.length > 2) {
-            return false;
+            valid=false;
         }
         try {
             intervalArray[0]=Double.parseDouble(intervalString[0]);
             intervalArray[1]=Double.parseDouble(intervalString[1]);
 
         } catch (NumberFormatException e){
-            return false;
+            valid=false;
         }
 
         return valid;

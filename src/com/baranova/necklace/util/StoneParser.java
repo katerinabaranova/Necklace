@@ -3,6 +3,7 @@ package com.baranova.necklace.util;
 import com.baranova.necklace.creation.PreciousStoneCreator;
 import com.baranova.necklace.creation.StoneCreator;
 import com.baranova.necklace.entity.Stone;
+import com.baranova.necklace.exception.NotValidStoneException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,8 +21,12 @@ public class StoneParser {
             String[] stonePar;
             stonePar = stone.split(" ");
             StoneCreator stoneCreator = new PreciousStoneCreator();
-            Stone newStone = stoneCreator.getStone(stonePar);
-            if (newStone!=null) {stonesObjects.add(newStone);}
+            try {
+                Stone newStone = stoneCreator.getStone(stonePar);
+                stonesObjects.add(newStone);
+            } catch (NotValidStoneException e){
+                LOG.error("Wrong stone information in file");
+            }
         }
         return stonesObjects;
     }

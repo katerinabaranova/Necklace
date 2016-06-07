@@ -80,3 +80,5 @@
 [ERROR] 2016-06-07 01:20:48.814 [main] PreciousStoneCreator - Wrong stone information in file
 [ERROR] 2016-06-07 01:20:48.860 [main] PreciousStoneCreator - Wrong stone information in file
 [ERROR] 2016-06-07 01:20:49.091 [main] ReportWriter - Wrong information in interval file
+[ERROR] 2016-06-07 19:06:27.635 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-07 19:06:27.694 [main] StoneParser - Wrong stone information in file
