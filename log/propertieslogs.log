@@ -82,3 +82,33 @@
 [ERROR] 2016-06-07 01:20:49.091 [main] ReportWriter - Wrong information in interval file
 [ERROR] 2016-06-07 19:06:27.635 [main] StoneParser - Wrong stone information in file
 [ERROR] 2016-06-07 19:06:27.694 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-08 00:58:39.003 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-08 00:58:39.021 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-08 00:58:39.145 [main] IntervalReader - Empty interval file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/interval.txt
+[ERROR] 2016-06-08 00:58:39.160 [main] ReportWriter - Wrong information in interval file
+[ERROR] 2016-06-08 01:00:38.968 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-08 01:00:39.016 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-08 01:00:39.216 [main] IntervalReader - Empty interval file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/interval.txt
+[ERROR] 2016-06-13 11:33:21.796 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:33:21.838 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:33:21.994 [main] IntervalReader - Empty interval file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/interval.txt
+[ERROR] 2016-06-13 11:33:50.076 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:33:50.078 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:34:04.708 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:34:04.709 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:35:24.208 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:35:24.246 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:36:03.720 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:36:03.722 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:36:39.437 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:36:39.439 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:36:39.440 [main] NecklaceReader - Error: too much information in necklace file:/Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/necklace.txt
+[ERROR] 2016-06-13 11:37:56.079 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:37:56.113 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:38:48.314 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:38:48.338 [main] StoneParser - Wrong stone information in file
+[ERROR] 2016-06-13 11:38:48.340 [main] NecklaceReader - Empty necklace file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/necklace.txt
+[ERROR] 2016-06-13 11:39:48.616 [main] StoneReader - Empty stone file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stones.txt
+[ERROR] 2016-06-13 11:42:12.305 [main] StoneReader - Empty stone file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stones.txt
+[ERROR] 2016-06-13 11:42:35.213 [main] StoneReader - Empty stone file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/stones.txt
+[ERROR] 2016-06-13 11:42:35.217 [main] NecklaceReader - Empty necklace file: /Users/Ekaterina/IdeaProjects/HTP5_Necklace/resource/necklace.txt

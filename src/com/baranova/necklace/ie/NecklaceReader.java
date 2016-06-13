@@ -15,7 +15,7 @@ public class NecklaceReader {
 
         static final Logger LOG= LogManager.getLogger();
 
-        public static String readNecklaceFile(String filename) throws IOException,EmptyFileException,WrongNecklaceException {
+        public static String readNecklaceFile(String filename)  {
 
             String necklaceName="";
             File f=new File(filename);
@@ -25,6 +25,7 @@ public class NecklaceReader {
             try{
                 bufferedReader=new BufferedReader(new FileReader(f));
                 String line;
+
                 while ((line=bufferedReader.readLine())!=null) {
                     necklaceName=line;
                     linesKol++;
@@ -32,18 +33,15 @@ public class NecklaceReader {
                 if (linesKol > 1) {
                     throw new WrongNecklaceException();
                 }
-                if (linesKol==0){
+                if (necklaceName.equals("")){
                     throw new EmptyFileException();
                 }
             } catch (IOException e){
                 LOG.error("Error while reading file:" + filename);
-                throw e;
             } catch (WrongNecklaceException e) {
                 LOG.error("Error: too much information in necklace file:"+filename);
-                throw e;
             }catch (EmptyFileException e){
                 LOG.error("Empty necklace file: "+filename);
-                throw e;
             } finally {
                 try {
                     if (bufferedReader != null) {

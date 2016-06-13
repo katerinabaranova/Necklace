@@ -21,20 +21,19 @@ import java.util.ArrayList;
 import java.util.Set;
 
 public class Main {
-    static final Logger LOG= LogManager.getLogger("Main");
+    static final Logger LOG= LogManager.getLogger();
 
     public static void main(String[] args) {
-        try {
-            ArrayList<String> stonesString = StoneReader.readStonesFile(FileConstant.STONE_FILE);
-            Set<Stone> necklaceComposition = StoneParser.parsingLine(stonesString);
-            String necklaceName = NecklaceReader.readNecklaceFile(FileConstant.NECKLACE_FILE);
+        ArrayList<String> stonesString = StoneReader.readStonesFile(FileConstant.STONE_FILE);
+        Set <Stone> necklaceComposition = null;
+        if (!stonesString.isEmpty()) {
+            necklaceComposition = StoneParser.parsingLine(stonesString);
+        }
+        String necklaceName = NecklaceReader.readNecklaceFile(FileConstant.NECKLACE_FILE);
+        if (necklaceComposition!=null&&!necklaceName.equals("")) {
             Necklace newNecklace = NecklaceCreator.getNecklace(necklaceName, necklaceComposition);
             ReportWriter.reportNecklace(FileConstant.REPORT_FILE, newNecklace);
-        } catch (IOException e){
-            ReportWriter.reportEmptyNecklace(FileConstant.REPORT_FILE,MessageConstant.READ_ERROR);
-        } catch (EmptyFileException e){
-            ReportWriter.reportEmptyNecklace(FileConstant.REPORT_FILE, MessageConstant.EMPTY_FILE);
-        } catch (WrongNecklaceException e){
+        } else {
             ReportWriter.reportEmptyNecklace(FileConstant.REPORT_FILE,MessageConstant.WRONG_INFORMATION);
         }
     }

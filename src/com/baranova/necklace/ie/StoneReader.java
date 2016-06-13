@@ -11,7 +11,7 @@ public class StoneReader {
 
     static final Logger LOG= LogManager.getLogger();
 
-    public static ArrayList<String> readStonesFile(String filename) throws IOException,EmptyFileException {
+    public static ArrayList<String> readStonesFile(String filename) {
 
         ArrayList<String> stones=new ArrayList<>();
         File f=new File(filename);
@@ -25,10 +25,8 @@ public class StoneReader {
             if (stones.isEmpty()){throw new EmptyFileException();}
         } catch (IOException e){
             LOG.error("Error while reading file: " + filename);
-            throw e;
         } catch(EmptyFileException e) {
             LOG.error("Empty stone file: "+filename);
-            throw e;
         }finally {
             try {
                 if (bufferedReader != null) {

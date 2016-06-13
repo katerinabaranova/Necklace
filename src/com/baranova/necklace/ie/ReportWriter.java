@@ -44,7 +44,6 @@ public class ReportWriter {
                 }
             } catch (WrongIntervalException e) {
                 printWriter.println("Impossible to write transparency report: there is no/wrong information in file");
-                LOG.error("Wrong information in interval file");
             }
         }catch (IOException e){
             LOG.error("Error while writing file:" + filename);
